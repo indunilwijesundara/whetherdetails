@@ -216,7 +216,7 @@ const Dashboard = () => {
             Today's Weather in <i>{weatherData.name}</i>
           </h2>
 
-          <div>
+          <div className="currentt">
             <p>
               <FaThermometerHalf /> Temperature {weatherData.main.temp}°C
             </p>
@@ -272,7 +272,7 @@ const Dashboard = () => {
                     </div>
                   ))}
                 </div>
-
+                          <hr></hr>
                 <button
                   className="btn-view-more"
                   onClick={() => setShowWeeklyForecast(!showWeeklyForecast)}
